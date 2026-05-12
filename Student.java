@@ -18,3 +18,9 @@ public class Student {
     }
     
 }
+
+
+// git pull: 업데이트된 코드를 로컬로 가져오기
+// git add .: 변경된 파일을 스테이징 영역에 추가
+// git commit -m "Add Student class with main method": 변경 사항을 커밋하고 메시지 작성
+// git push
