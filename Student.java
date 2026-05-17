@@ -3,15 +3,16 @@ public class Student {
     String name;
     int age;
 
-    public Student(String studentID, String name, int age) {
-        this.studentID = studentID;
+    // Constructor: Object 생성할 때 호출되는 특별한 메서드, 객체의 초기 상태를 설정
+    public Student(String studentID, String name) {
+        this.studentID = studentID; // object의 field에 parameter를 할당함.
         this.name = name;
-        this.age = age;
+        this.age = 18; // 기본값으로 18 설정;
     }
 
     public static void main(String[] args) {
-        Student Junhee = new Student("S001", "Junhee", 18);
-        Student Minseok = new Student("S002", "Minseok", 24);
+        Student Junhee = new Student("S001", "Junhee");
+        Student Minseok = new Student("S002", "Minseok");
 
         System.out.println("Student ID: " + Junhee.studentID + ", Name: " + Junhee.name + ", Age: " + Junhee.age);
         System.out.println("Student ID: " + Minseok.studentID + ", Name: " + Minseok.name + ", Age: " + Minseok.age);
@@ -24,3 +25,4 @@ public class Student {
 // git add .: 변경된 파일을 스테이징 영역에 추가
 // git commit -m "Add Student class with main method": 변경 사항을 커밋하고 메시지 작성
 // git push
+
